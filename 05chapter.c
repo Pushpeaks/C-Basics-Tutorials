@@ -82,6 +82,27 @@ int sumofnums(int num){
     return sum;
 }
 
+//pass by reference
+int pass_by_ref(int* n, int* m){
+    int sum;
+    sum=*n+*m;
+    return sum;
+}
+
+void sum_avg(int *a, int* b){
+    int sum,avg;
+    sum=*a+*b;
+    avg=(*a+*b)/2;
+    printf("Sum : %d\n Avg : %d",sum,avg);
+}
+
+/*
+6. Write a program to print the value of a variable i by using a pointer to pointer
+type variable.
+
+*/
+
+
 
 void main(){
     // int num,a,b,c;
@@ -126,9 +147,16 @@ void main(){
     // dip=fibo(term);
     // printf("%d term of the fibonacci series is : %d",term,dip);
 
-    int lines;
-    printf("Enter the total number of lines you want in the pattern : ");
-    scanf("%d",&lines);
-    uptriangle(lines);
+    // int lines;
+    // printf("Enter the total number of lines you want in the pattern : ");
+    // scanf("%d",&lines);
+    // uptriangle(lines);
+    
+    int a,b,res;
+    printf("Enter the values of a and b : ");
+    scanf("%d %d",&a,&b);
+    sum_avg(&a,&b);//pass by reference -> sum and avg
+    res=pass_by_ref(&a,&b);//pass by reference -> sum and avg
+    printf("\npass by ref result : %d",res);
 }
 
