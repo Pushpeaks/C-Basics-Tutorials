@@ -11,7 +11,7 @@
 
 //factorial using recursion
 unsigned long long int factorial(int num){
-    long int fact;
+    unsigned long long int fact;
     if(num==0 || num==1){
         return 1;
     }else{
@@ -44,19 +44,45 @@ float forceofattraction(float mass){
     return force;
 }
 
+//to calculate the nth number of the fibonacci series
 int fibo(int n){
-    
+    int term;
+    if(n<=1){
+        return 0;
+    }if(n==1){
+        return 0;
+    }if(n==2){
+        return 1;
+    }else{
+        return fibo(n-2)+fibo(n-1);
+    }
 }
 
 void uptriangle(int n){
     int i,j;
-    for(i=1;i<=n;i++){
-        for(j=1;j<=i;j++){
-            printf(j*'* ');//constant char
+    for(i=0;i<=n;i++){
+        for(j=0;j<(i*2)+1;j++){
+            printf("* ");//constant char
         }
-
+        printf("\n");   
     }
 }
+
+
+//  Write a recursive function to calculate the sum of first 'n' natural numbers.
+int sumofnums(int num){
+    int sum=0;
+    if(num==0){
+        return 0;
+    }else if(num==1){
+        return 0;
+    }else{
+        sum=num+sumofnums(num-1);
+    }
+    return sum;
+}
+
+
 void main(){
     // int num,a,b,c;
     // float avg;
@@ -88,5 +114,21 @@ void main(){
     // int a = 4;
     // printf("%d %d %d \n", a, ++a, a++);
 
+    // int n,sum;
+    // printf("Enter a Number : ");
+    // scanf("%d",&n);
+    // sum=sumofnums(n);
+    // printf("%d",&sum);
 
+    // int term,dip;
+    // printf("Enter the term you want : ");
+    // scanf("%d",&term);
+    // dip=fibo(term);
+    // printf("%d term of the fibonacci series is : %d",term,dip);
+
+    int lines;
+    printf("Enter the total number of lines you want in the pattern : ");
+    scanf("%d",&lines);
+    uptriangle(lines);
 }
+
