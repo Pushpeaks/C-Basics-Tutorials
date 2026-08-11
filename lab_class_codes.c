@@ -162,6 +162,16 @@ int factorial(int num){
     }
 }
 
+void up_left_triangle(int rows){
+    int i,j;
+    for(i=0;i<rows;i++){
+        for(j=0;j<i;j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
 int main(){
     // int num;
     // printf("Enter the number whose multiplication table you have to print: ");
@@ -173,11 +183,15 @@ int main(){
     // scanf("%d",&num);
     // sum=sum_of_evennum(num);
     // printf("The sum = %d",sum);
-    int num;
-    long fact;
-    printf("Enter the number for factorial : ");
-    scanf("%d",&num);
-    fact=factorial(num);
-    printf("%ld",fact);
+    // int num;
+    // long fact;
+    // printf("Enter the number for factorial : ");
+    // scanf("%d",&num);
+    // fact=factorial(num);
+    // printf("%ld",fact);
+    int rows;
+    printf("Enter the number of rows : ");
+    scanf("%d",&rows);
+    up_left_triangle(rows);    
     return 0;
 }
