@@ -53,25 +53,58 @@ int str_len(char* str){
     return count;
 }
 
-int main(){
-    char s[30];
-    int i;
-    printf("Enter a sentence : ");
-    gets(s);
-    i=str_len(s);
-    printf("\nLength of the string (including in between spaces) using my function is : %d",i);
-}
+// int main(){
+//     char s[30];
+//     int i;
+//     printf("Enter a sentence : ");
+//     gets(s);
+//     i=str_len(s);
+//     printf("\nLength of the string (including in between spaces) using my function is : %d",i);
+// }
 
 /*
 4. Write a function slice() to slice a string. It should change the original string such
-*/
-
-
-/*
-
 that it is now the sliced string. Take m and n as the start and ending position for
 slice.
+*/
+void str_slicer(char *str,int m,int n){
+    int i,ind=0;
+    // char st[]="";
+    if(n>strlen(str) || m>strlen(str) || m<0 || m>n){
+        printf("Enter logical starting and ending indices for the slice.");
+    }else{
+        for(i=m;i<=n;i++){
+            str[ind]=str[i];
+            ind++;
+        }
+        str[ind]='\0';
+        printf("%s",str);
+    }
+}
+
+// int main(){
+//     char st[]="Pushpesh";
+//     str_slicer(st,3,7);
+// }
+
+/*
 5. Write your own version of strcpy function from <string.h> .
+*/
+
+char* myown_strcpy(char *str,char *str1){
+    int i=0;
+    while(str[i]!='\0'){
+        str1[i]=str[i];
+    }
+    return str1;
+}
+
+void main(){
+    char source[]="pushpesh";
+    char dest[8];
+    myown_strcpy(source, &dest);
+}
+/*
 6. Write a program to encrypt a string by adding 1 to the ASCII value of its characters.
 7. Write a program to decrypt the string encrypted using encrypt function in problem 6.
 8. Write a program to count the occurrence of a given character in a string.
