@@ -91,21 +91,56 @@ void str_slicer(char *str,int m,int n){
 5. Write your own version of strcpy function from <string.h> .
 */
 
-char* myown_strcpy(char *str,char *str1){
+// char* myown_strcpy(char *str,char *str1){
+//     int i=0;
+//     while(str[i]!='\0'){
+//         str1[i]=str[i];
+//     }
+//     return str1;
+// }
+
+// void main(){
+//     char source[]="pushpesh";
+//     char dest[8];
+//     myown_strcpy(source, &dest);
+// }
+/*
+6. Write a program to encrypt a string by adding 1 to the ASCII value of its characters.
+*/
+char* encrypt(char *str){
     int i=0;
-    while(str[i]!='\0'){
-        str1[i]=str[i];
+    char str_new[strlen(str)];
+    for(i=0;i<strlen(str);i++){
+        str_new[i]=str[i]+1;
     }
-    return str1;
+    str_new[i]='\0';
+    printf("Entered string : %s\n",str);
+    printf("Encrypted string : %s",str_new);
+    return str_new;    
+}
+
+void decrypt(char *str){
+    int i=0;
+    char str_new[strlen(str)];
+    for(i=0;i<strlen(str);i++){
+        str_new[i]=str[i]-1;
+    }
+    // printf("Entered string : %s\n",str);
+    printf("Decrypted string : %s\n",str_new);
+    
 }
 
 void main(){
-    char source[]="pushpesh";
-    char dest[8];
-    myown_strcpy(source, &dest);
+    char* enc_str;;
+    char str[]="Pushpesh Srivastava ";
+    encrypt(str);
+    enc_str=encrypt(str);
+    decrypt(enc_str);
+
 }
 /*
-6. Write a program to encrypt a string by adding 1 to the ASCII value of its characters.
+
+
 7. Write a program to decrypt the string encrypted using encrypt function in problem 6.
 8. Write a program to count the occurrence of a given character in a string.
 9. WAP to check whether the given character is present in the string or not?
