@@ -172,26 +172,27 @@ void up_left_triangle(int rows){
     }
 }
 
-int main(){
-    // int num;
-    // printf("Enter the number whose multiplication table you have to print: ");
-    // scanf("%d",&num);
-    // multiplication_table(num);
-    // return 0;
-    // int num,sum;
-    // printf("Enter the value of num : ");
-    // scanf("%d",&num);
-    // sum=sum_of_evennum(num);
-    // printf("The sum = %d",sum);
-    // int num;
-    // long fact;
-    // printf("Enter the number for factorial : ");
-    // scanf("%d",&num);
-    // fact=factorial(num);
-    // printf("%ld",fact);
-    int rows;
-    printf("Enter the number of rows : ");
-    scanf("%d",&rows);
-    up_left_triangle(rows);    
-    return 0;
-}
+// int main(){
+//     // int num;
+//     // printf("Enter the number whose multiplication table you have to print: ");
+//     // scanf("%d",&num);
+//     // multiplication_table(num);
+//     // return 0;
+//     // int num,sum;
+//     // printf("Enter the value of num : ");
+//     // scanf("%d",&num);
+//     // sum=sum_of_evennum(num);
+//     // printf("The sum = %d",sum);
+//     // int num;
+//     // long fact;
+//     // printf("Enter the number for factorial : ");
+//     // scanf("%d",&num);
+//     // fact=factorial(num);
+//     // printf("%ld",fact);
+//     int rows;
+//     printf("Enter the number of rows : ");
+//     scanf("%d",&rows);
+//     up_left_triangle(rows);    
+//     return 0;
+// }
+
