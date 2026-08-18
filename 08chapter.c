@@ -107,36 +107,34 @@ void str_slicer(char *str,int m,int n){
 /*
 6. Write a program to encrypt a string by adding 1 to the ASCII value of its characters.
 */
-char* encrypt(char *str){
+void encrypt(char *str){
     int i=0;
-    char str_new[strlen(str)];
     for(i=0;i<strlen(str);i++){
-        str_new[i]=str[i]+1;
+        str[i]=str[i]+1;
     }
-    str_new[i]='\0';
-    printf("Entered string : %s\n",str);
-    printf("Encrypted string : %s",str_new);
-    return str_new;    
 }
 
 void decrypt(char *str){
     int i=0;
-    char str_new[strlen(str)];
     for(i=0;i<strlen(str);i++){
-        str_new[i]=str[i]-1;
+        str[i]=str[i]-1;
     }
-    // printf("Entered string : %s\n",str);
-    printf("Decrypted string : %s\n",str_new);
-    
 }
 
-void main(){
-    char* enc_str;;
+int main(void){
     char str[]="Pushpesh Srivastava ";
-    encrypt(str);
-    enc_str=encrypt(str);
-    decrypt(enc_str);
 
+    printf("Original string: %s\n", str);
+
+    // Encrypt the string in-place
+    encrypt(str);
+    printf("Encrypted string: %s\n", str);
+
+    // Decrypt the string in-place
+    decrypt(str);
+    printf("Decrypted string: %s\n", str);
+
+    return 0;
 }
 /*
 

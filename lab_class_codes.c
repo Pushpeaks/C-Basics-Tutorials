@@ -233,8 +233,15 @@ void sum3(){
 
 
 void main(){
-    sum(10,20);
-    sum1();
+    int result;
+
+    result = sum(10,20);
+    printf("Result = %d\n\n", result);
+
+    result = sum1();
+    printf("Result = %d\n\n", result);
+
     sum2(10,20);
+    printf("\n\n");
     sum3();
 }
