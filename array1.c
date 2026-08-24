@@ -28,6 +28,7 @@ int main() {
         printf("%d ", arr[i]);
     }
 
+
     printf("\n\nPRINTING THE SUM OF THE ELEMENTS IN THE ARRAY\n");
     printf("Sum: %d\n", sum);
 
