@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-    int n, i, search, found = 0, id = -1;
+    int n, i,j, search, found = 0, id = -1,temp,min;
     int sum = 0;
     float average;
 
@@ -52,6 +52,8 @@ int main() {
         }
     }
 
+
+
     printf("\n\nPRINTING THE REVERSED ARRAY\n");
     for (i = n - 1; i >= 0; i--) {
         printf("%d ", arr[i]);
@@ -72,5 +74,24 @@ int main() {
     } else {
         printf("Element not found\n");
     }
+
+
+    printf("\n\nSORTING THE ARRAY\n");
+    for(i=0;i<n-1;i++){
+        min=i;
+        for(j=i+1;j<n;j++){
+            if(arr[j]<arr[min]){
+                min=j;
+            }
+            temp=arr[i];
+            arr[i]=arr[min];
+            arr[min]=temp;
+        }
+    }
+    printf("\nSORTED ARRAY: ");
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+
     return 0;
 }
