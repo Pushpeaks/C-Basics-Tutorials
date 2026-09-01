@@ -196,52 +196,104 @@
 // //     return 0;
 // // }
 
-#include<stdio.h>
-#include<conio.h>
+// #include<stdio.h>
+// #include<conio.h>
 
-//all types of functions
+// //all types of functions
+// /*
+// 1) with args and with return type
+// 2) without args and with return type
+// 3) with args and without return type
+// 4) without args and without return type
+// */
+
+// //with args and with return type
+// int sum(int a,int b){
+//     printf("With arguments and with return type\n");
+//     return a+b;
+// }
+
+// //without args and with return type
+// int sum1(){
+//     printf("Without arguments and with return type\n");
+//     return 10;
+// }
+
+// //with args and without return type
+// void sum2(int a,int b){
+//     printf("With arguments and without return type\n");
+//     printf("Sum = %d",a+b);
+// }
+
+// //without args and without return type
+// void sum3(){
+//     printf("Without arguments and without return type\n");
+//     printf("Sum = 10");
+// }
+
+
+// void main(){
+//     int result;
+
+//     result = sum(10,20);
+//     printf("Result = %d\n\n", result);
+
+//     result = sum1();
+//     printf("Result = %d\n\n", result);
+
+//     sum2(10,20);
+//     printf("\n\n");
+//     sum3();
+// }
+
 /*
-1) with args and with return type
-2) without args and with return type
-3) with args and without return type
-4) without args and without return type
+wap for calculating the SI and CI
 */
 
-//with args and with return type
-int sum(int a,int b){
-    printf("With arguments and with return type\n");
-    return a+b;
+#include<stdio.h>
+#include<math.h>
+#include<ctype.h>
+
+float simple(float,float,float);
+float compound(float,float,float,int);
+
+int main(){
+    float p,r,t;
+    char choice;
+    int n;
+    printf("Enter the principle amount : \n");
+    scanf("%f",&p);
+    printf("Enter the rate (in %%) : \n");
+    scanf("%f",&r);
+    printf("Enter the total time (in years): \n");
+    scanf("%f",&t);
+    printf("Enter S for calculating S.I \nEnter C for calculating C.I\n");
+    scanf(" %c",&choice);
+    choice=tolower(choice);
+    switch(choice){
+        case 's':
+        simple(p,r,t);
+        break;
+        case 'c':
+        printf("Enter the number of times interest is compounded per year: \n");
+        scanf("%d",&n);
+        compound(p,r,t,n);
+        break;
+    }
+
+    return 0;
 }
 
-//without args and with return type
-int sum1(){
-    printf("Without arguments and with return type\n");
-    return 10;
+float simple(float p,float r, float t){
+    printf("S.I %.2f",(p*r*t)/100);
+    return (p*r*t)/100;
 }
 
-//with args and without return type
-void sum2(int a,int b){
-    printf("With arguments and without return type\n");
-    printf("Sum = %d",a+b);
-}
-
-//without args and without return type
-void sum3(){
-    printf("Without arguments and without return type\n");
-    printf("Sum = 10");
+float compound(float p,float r, float t,int n){
+    float amt;
+    amt=p*pow(1+r/n,n*t);
+    printf("C.I %.2f",amt-p);
+    return amt-p;
 }
 
 
-void main(){
-    int result;
-
-    result = sum(10,20);
-    printf("Result = %d\n\n", result);
-
-    result = sum1();
-    printf("Result = %d\n\n", result);
-
-    sum2(10,20);
-    printf("\n\n");
-    sum3();
-}
