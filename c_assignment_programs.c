@@ -1,161 +1,92 @@
-#include<stdio.h>
-#include<conio.h>
-// #include<stdlib.h>
-#include<ctype.h>
-//swapping two numbers using third variable
-// int main(){
-//     int a,b,temp;
-//     printf("Enter the value of a : ");
-//     scanf("%d",&a);
-//     printf("Enter the value of b : ");
-//     scanf("%d",&b);
-//     temp=b;
-//     b=a;
-//     a=temp;
-//     printf("Values after swapping a: %d and b: %d",a,b);
-//     return 0;    
-// }
+/*
+1) WAP to find the largest of two numbers
+*/
+
+// #include<stdio.h>
+
 // int main(){
 //     int a,b;
-//     printf("Enter the value of a : ");
+//     printf("Enter two numbers : \n");
 //     scanf("%d",&a);
-//     printf("Enter the value of b : ");
-//     scanf("%d",&b);  
-//     a=a+b;
-//     b=a-b;
-//     a=a-b;
-//     printf("Values after swapping a: %d and b: %d",a,b);
-//     return 0;    
-//}
-
-// //add two numbers without using + operator
-// int main(){
-//     int a,b,i,temp;
-//     printf("enter the value of a : ");
-//     scanf("%d",&a);
-//     printf("enter the value of b : ");
 //     scanf("%d",&b);
-//     while(b>0){//positive -> add
-//         a++;
-//         b--;
+//     if(a>b){
+//         printf("%d is larger than %d",a,b);
 //     }
-//     while(b<0){//negative -> sub
-//         a--;
-//         b++;
+//     else if(a<b){
+//         printf("%d is larger than %d",a,b);
 //     }
-//     printf("Sum : %d",a);
+//     else{
+//         printf("Both are equal");
+//     }
 //     return 0;
 // }
 
-//vowel or consonant?
+/*
+2) WAP to find the smallest of 3 numbers
+*/
+
+// #include<stdio.h>
+
 // int main(){
-//     char a;
-//     printf("Enter the character : ");
-//     scanf("%c",&a);
-//     a=tolower(a);
-//     switch(a){
-//         case 'a':
-//         case 'e':
-//         case 'i':
-//         case 'o':
-//         case 'u':
-//         printf("Vowel");
-//         break;
-//         case 'b':
-//         case 'c':
-//         case 'd':
-//         case 'f':
-//         case 'g':
-//         case 'h':
-//         case 'j':
-//         case 'k':
-//         case 'l':
-//         case 'm':
-//         case 'n':
-//         case 'p':
-//         case 'q':
-//         case 'r':
-//         case 's':
-//         case 't':
-//         printf("Consonant");
-//         break;
-//         default:
-//         printf("No such choices!");
+//     int a,b,c;
+//     printf("Enter two numbers : \n");
+//     scanf("%d",&a);
+//     scanf("%d",&b);
+//     scanf("%d",&c);
+//     if(a>b && b>c){
+//         printf("%d is the smallest",c);
+//     }
+//     else if(a>b && c>b){
+//         printf("%d is the smallest",b);
+//     }
+//     else if(c>a && b>a){
+//         printf("%d is the smallest",a);
+//     }else{
+//         printf("All three are equal");
 //     }
 //     return 0;
 // }
 
-//to cal area of diff shapes rect,circ,square, trianlge
+
+/*
+3) Check whether the given year is a leap year or not
+*/
+
+// #include<stdio.h>
+
 // int main(){
-//     char ch;
-//     float area;
-//     float a,b;
-//     printf("Enter R for Rectangle\n");    
-//     printf("Enter C for Circle\n");    
-//     printf("Enter S for Square\n");    
-//     printf("Enter T for Triangle\n");   
-//     printf("Enter your choice : ");
-//     scanf("%c",&ch);
-//     ch=tolower(ch);
-//     switch(ch){
-//         case 'r':
-//             printf("Enter the length of the rectangle : ");
-//             scanf("%f",&a);
-//             printf("Enter the breadth of the rectangle : ");
-//             scanf("%f",&b);
-//             area=a*b;
-//             printf("Area of rectangle = %f",area);
-//             break;
-//         case 'c':
-//             printf("Enter the radius of the circle : ");
-//             scanf("%f",&a);
-//             area=3.14*a*a;
-//             printf("Area of circle = %f",area);
-//             break;
-//         case 's':
-//             printf("Enter the side length of the square : ");
-//             scanf("%f",&a);
-//             area=a*a;
-//             printf("Area of square = %f",area);
-//             break;
-//         case 't':
-//             printf("Enter the base of the triangle : ");
-//             scanf("%f",&a);
-//             printf("Enter the height of the triangle : ");
-//             scanf("%f",&b);
-//             area=0.5*a*b;
-//             printf("Area of triangle = %f",area);
-//             break;
-//         default:
-//             printf("No such choices!");
+//     int year;
+//     printf("Enter the year : ");
+//     scanf("%d",&year);
+//     if(year%400==0 || (year%4==0 && year%100!=0)){
+//         printf("Given year is a leap year");
+//     }else{
+//         printf("Given year is not a leap year");
 //     }
 //     return 0;
 // }
 
-//display grade system based on grade character
-int main(){
-    char grade;
-    printf("Enter the grade : ");
-    scanf("%c",&grade);
-    grade=tolower(grade);
-    switch(grade){
-        case 'a':
-        printf("Excellent");;
-        break;
-        case 'b':
-        printf("Very Good");
-        break;
-        case 'c':
-        printf("Good");
-        break;
-        case 'd':
-        printf("Average");
-        break;
-        case 'f':
-        printf("Fail");
-        break;
-        default:
-        printf("Invalid grade");
+/*
+4) WAP to check whether the given character is Consonant or Vowel?
+*/
+#include <stdio.h>
+#include <ctype.h>
+
+int main(void) {
+    char ch;
+
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    ch = tolower((unsigned char)ch);
+
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        printf("Given character is a vowel\n");
+    } else if (ch >= 'a' && ch <= 'z') {
+        printf("Given character is a consonant\n");
+    } else {
+        printf("Please enter an alphabet character.\n");
     }
+
     return 0;
 }

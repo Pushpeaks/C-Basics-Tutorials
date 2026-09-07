@@ -1,201 +1,200 @@
-// // #include<stdio.h>
-// // #include<stdlib.h>
+// // // #include<stdio.h>
+// // // #include<stdlib.h>
 
-// // //switch case using const characters
-// // // void main(){
-// // //     char s;
-// // //     printf("Enter A,B,C and D for the cases : ");
-// // //     scanf("%c",&s);
-// // //     switch(s){
-// // //         case 'a':
-// // //         printf("u are in case a");
-// // //         break;        
-// // //         case 'b':
-// // //         printf("u are in case a");
-// // //         break;
-// // //         case 'c':
-// // //         printf("u are in case a");
-// // //         break;
-// // //         case 'd':
-// // //         printf("u are in case a");
-// // //         break;
-// // //         default:
-// // //         printf("No such choices!");
+// // // //switch case using const characters
+// // // // void main(){
+// // // //     char s;
+// // // //     printf("Enter A,B,C and D for the cases : ");
+// // // //     scanf("%c",&s);
+// // // //     switch(s){
+// // // //         case 'a':
+// // // //         printf("u are in case a");
+// // // //         break;        
+// // // //         case 'b':
+// // // //         printf("u are in case a");
+// // // //         break;
+// // // //         case 'c':
+// // // //         printf("u are in case a");
+// // // //         break;
+// // // //         case 'd':
+// // // //         printf("u are in case a");
+// // // //         break;
+// // // //         default:
+// // // //         printf("No such choices!");
+// // // //     }
+// // // // }
+
+// // // //switch case using special characters
+// // // // void main(){
+// // // //     char s;
+// // // //     int a,b;
+// // // //     printf("Enter your choice : ");
+// // // //     scanf("%c",&s);
+// // // //     printf("Enter the int value of a : ");
+// // // //     scanf(" %d",&a);
+// // // //     // getche();
+// // // //     printf("Enter the int value of b : ");
+// // // //     scanf(" %d",&b);
+// // // //     // getche();
+
+// // // //     switch(s){
+// // // //         case '+':
+// // // //         printf("Sum : %d\n",a+b);
+// // // //         break;
+
+// // // //         case '-':
+// // // //         printf("Difference : %d\n",a-b);
+// // // //         break;
+
+// // // //         case '*':
+// // // //         printf("Product : %d\n",a*b);
+
+// // // //         break;
+// // // //         case '/':
+// // // //         printf("Division : %d\n",a/b);
+// // // //         break;
+
+// // // //         case '%':
+// // // //         printf("Remainder : %d",a%b);
+// // // //         break;
+// // // //     }
+// // // // }
+
+// // // // void main(){
+// // // //     int a,b,op;
+// // // //     printf("Enter 2 numbers : ");
+// // // //     scanf("%d %d",&a,&b);
+// // // //     printf("Enter the operation +,-,*,/ : ");
+// // // //     scanf(" %c",&op);
+// // // //     if(op=='+' || op=='-' || op=='*' ||op=='/'){
+// // // //         if(op=='+'){
+// // // //             printf("Sum : %d",a+b);
+// // // //         }
+// // // //         else if(op=='-'){
+// // // //             printf("Difference : %d",a-b);
+// // // //         }
+// // // //         else if(op=='*'){
+// // // //             printf("Product : %d",a*b);
+// // // //         }
+// // // //         else{
+// // // //             printf("Division : %d",a/b);
+// // // //         }
+// // // //     }else{
+// // // //         printf("No such operations can be done");
+// // // //     }
+// // // // }
+
+// // //11-08-2026
+
+// // /*
+// // print numbers from 1 to 100
+// // */
+// // #include <stdio.h>
+
+// // // int main() {
+// // //     int i;
+// // //     for(i=0;i<=10;i++){
+// // //         printf("%d\n ",i);
 // // //     }
+// // //     return 0;
+// // // }
+// // // int main() {
+// // //     int i;
+// // //     for(i=10;i>=1;i--){
+// // //         printf("%d\n ",i);
+// // //     }
+// // //     return 0;
 // // // }
 
-// // //switch case using special characters
-// // // void main(){
-// // //     char s;
-// // //     int a,b;
-// // //     printf("Enter your choice : ");
-// // //     scanf("%c",&s);
-// // //     printf("Enter the int value of a : ");
-// // //     scanf(" %d",&a);
-// // //     // getche();
-// // //     printf("Enter the int value of b : ");
-// // //     scanf(" %d",&b);
-// // //     // getche();
-
-// // //     switch(s){
-// // //         case '+':
-// // //         printf("Sum : %d\n",a+b);
-// // //         break;
-
-// // //         case '-':
-// // //         printf("Difference : %d\n",a-b);
-// // //         break;
-
-// // //         case '*':
-// // //         printf("Product : %d\n",a*b);
-
-// // //         break;
-// // //         case '/':
-// // //         printf("Division : %d\n",a/b);
-// // //         break;
-
-// // //         case '%':
-// // //         printf("Remainder : %d",a%b);
-// // //         break;
+// // // int main(){
+// // //     int i;
+// // //     for(i=1;i<=100;i++){
+// // //         if(i%2==0){
+// // //             printf("%d ",i);
+// // //         }
 // // //     }
+// // //     return 0;
 // // // }
 
-// // // void main(){
-// // //     int a,b,op;
-// // //     printf("Enter 2 numbers : ");
-// // //     scanf("%d %d",&a,&b);
-// // //     printf("Enter the operation +,-,*,/ : ");
-// // //     scanf(" %c",&op);
-// // //     if(op=='+' || op=='-' || op=='*' ||op=='/'){
-// // //         if(op=='+'){
-// // //             printf("Sum : %d",a+b);
+// // // int main(){
+// // //     int i;
+// // //     for(i=1;i<=100;i++){
+// // //         if(i%2!=0){
+// // //             printf("%d ",i);
 // // //         }
-// // //         else if(op=='-'){
-// // //             printf("Difference : %d",a-b);
-// // //         }
-// // //         else if(op=='*'){
-// // //             printf("Product : %d",a*b);
-// // //         }
-// // //         else{
-// // //             printf("Division : %d",a/b);
-// // //         }
-// // //     }else{
-// // //         printf("No such operations can be done");
 // // //     }
+// // //     return 0;
 // // // }
 
-// //11-08-2026
-
-// /*
-// print numbers from 1 to 100
-// */
-// #include <stdio.h>
-
-// // int main() {
+// // void multiplication_table(int num){
 // //     int i;
-// //     for(i=0;i<=10;i++){
-// //         printf("%d\n ",i);
+// //     for(i=1;i<=10;i++){
+// //         printf("%d x %d = %d\n",num,i,num*i);
 // //     }
-// //     return 0;
-// // }
-// // int main() {
-// //     int i;
-// //     for(i=10;i>=1;i--){
-// //         printf("%d\n ",i);
-// //     }
-// //     return 0;
 // // }
 
-// // int main(){
-// //     int i;
-// //     for(i=1;i<=100;i++){
+// // int sum_of_num(int num){
+// //     int i,sum=0;
+// //     for(i=0;i<=num;i++){
+// //         sum+=i;
+// //     }
+// //     return sum;
+// // }
+// // int sum_of_evennum(int num){
+// //     int i,sum=0;
+// //     for(i=0;i<=num;i++){
 // //         if(i%2==0){
-// //             printf("%d ",i);
+// //             sum+=i;
 // //         }
 // //     }
-// //     return 0;
+// //     return sum;
 // // }
 
-// // int main(){
-// //     int i;
-// //     for(i=1;i<=100;i++){
-// //         if(i%2!=0){
-// //             printf("%d ",i);
+// // int factorial(int num){
+// //     int fact=1,i;
+// //     if(num==0 || num==1){
+// //         return 0;
+// //     }else{
+// //         for(i=num;i>=1;i--){
+// //             fact=fact*i;
 // //         }
+// //         return fact;
 // //     }
-// //     return 0;
 // // }
 
-// void multiplication_table(int num){
-//     int i;
-//     for(i=1;i<=10;i++){
-//         printf("%d x %d = %d\n",num,i,num*i);
-//     }
-// }
-
-// int sum_of_num(int num){
-//     int i,sum=0;
-//     for(i=0;i<=num;i++){
-//         sum+=i;
-//     }
-//     return sum;
-// }
-// int sum_of_evennum(int num){
-//     int i,sum=0;
-//     for(i=0;i<=num;i++){
-//         if(i%2==0){
-//             sum+=i;
-//         }
-//     }
-//     return sum;
-// }
-
-// int factorial(int num){
-//     int fact=1,i;
-//     if(num==0 || num==1){
-//         return 0;
-//     }else{
-//         for(i=num;i>=1;i--){
-//             fact=fact*i;
-//         }
-//         return fact;
-//     }
-// }
-
-// void up_left_triangle(int rows){
-//     int i,j;
-//     for(i=0;i<rows;i++){
-//         for(j=0;j<i;j++){
-//             printf("* ");
-//         }
-//         printf("\n");
-//     }
-// }
-
-// // int main(){
-// //     // int num;
-// //     // printf("Enter the number whose multiplication table you have to print: ");
-// //     // scanf("%d",&num);
-// //     // multiplication_table(num);
-// //     // return 0;
-// //     // int num,sum;
-// //     // printf("Enter the value of num : ");
-// //     // scanf("%d",&num);
-// //     // sum=sum_of_evennum(num);
-// //     // printf("The sum = %d",sum);
-// //     // int num;
-// //     // long fact;
-// //     // printf("Enter the number for factorial : ");
-// //     // scanf("%d",&num);
-// //     // fact=factorial(num);
-// //     // printf("%ld",fact);
-// //     int rows;
-// //     printf("Enter the number of rows : ");
-// //     scanf("%d",&rows);
-// //     up_left_triangle(rows);    
-// //     return 0;
+// // void up_left_triangle(int rows){
+// //     int i,j;
+// //     for(i=0;i<rows;i++){
+// //         for(j=0;j<i;j++){
+// //             printf("* ");
+// //         }
+// //         printf("\n");
+// //     }
 // // }
 
+// // // int main(){
+// // //     // int num;
+// // //     // printf("Enter the number whose multiplication table you have to print: ");
+// // //     // scanf("%d",&num);
+// // //     // multiplication_table(num);
+// // //     // return 0;
+// // //     // int num,sum;
+// // //     // printf("Enter the value of num : ");
+// // //     // scanf("%d",&num);
+// // //     // sum=sum_of_evennum(num);
+// // //     // printf("The sum = %d",sum);
+// // //     // int num;
+// // //     // long fact;
+// // //     // printf("Enter the number for factorial : ");
+// // //     // scanf("%d",&num);
+// // //     // fact=factorial(num);
+// // //     // printf("%ld",fact);
+// // //     int rows;
+// // //     printf("Enter the number of rows : ");
+// // //     scanf("%d",&rows);
+// // //     up_left_triangle(rows);    
+// // //     return 0;
+// // // }
 // #include<stdio.h>
 // #include<conio.h>
 
@@ -245,10 +244,18 @@
 //     printf("\n\n");
 //     sum3();
 // }
-
 /*
 wap for calculating the SI and CI
 */
+// void str_right_triangle(char *s){
+//     int i,j;
+//     for(i=0;s[i]!='\0';i++){
+//         for(j=0;j<=i;j++){
+//             printf("%c",s[j]);
+//         }
+//         printf("\n");
+//     }
+// }   
 
 #include<stdio.h>
 #include<math.h>
@@ -257,43 +264,56 @@ wap for calculating the SI and CI
 float simple(float,float,float);
 float compound(float,float,float,int);
 
-int main(){
+int main(void) {
     float p,r,t;
     char choice;
     int n;
-    printf("Enter the principle amount : \n");
-    scanf("%f",&p);
+    printf("Enter the principal amount: ");
+    scanf("%f", &p);
     printf("Enter the rate (in %%) : \n");
-    scanf("%f",&r);
+    scanf("%f", &r);
     printf("Enter the total time (in years): \n");
-    scanf("%f",&t);
+    scanf("%f", &t);
     printf("Enter S for calculating S.I \nEnter C for calculating C.I\n");
-    scanf(" %c",&choice);
-    choice=tolower(choice);
-    switch(choice){
+    scanf(" %c", &choice);
+    choice = (char)tolower((unsigned char)choice);
+    switch(choice) {
         case 's':
-        simple(p,r,t);
-        break;
+            simple(p, r, t);
+            break;
         case 'c':
-        printf("Enter the number of times interest is compounded per year: \n");
-        scanf("%d",&n);
-        compound(p,r,t,n);
-        break;
+            printf("Enter the number of times interest is compounded per year: ");
+            scanf("%d", &n);
+            if (n > 0) {
+                compound(p, r, t, n);
+            } else {
+                printf("Compounding frequency must be positive.\n");
+            }
+            break;
+        default:
+            printf("Invalid choice. Enter S or C.\n");
     }
 
     return 0;
 }
 
-float simple(float p,float r, float t){
-    printf("S.I %.2f",(p*r*t)/100);
-    return (p*r*t)/100;
+float simple(float p, float r, float t) {
+    float interest = (p * r * t) / 100;
+    printf("S.I. = %.2f\n", interest);
+    return interest;
 }
 
-float compound(float p,float r, float t,int n){
-    float amt;
-    amt=p*pow(1+r/n,n*t);
-    printf("C.I %.2f",amt-p);
-    return amt-p;
+float compound(float p, float r, float t, int n) {
+    float amount = p * pow(1 + r / (100 * n), n * t);
+    float interest = amount - p;
+    printf("C.I. = %.2f\n", interest);
+    return interest;
 }
 
+// void main(){
+//     char s[100];
+//     printf("Enter a string : ");
+//     scanf("%s",s);
+//     str_right_triangle(s);//FUNCTION CALL
+// }
 
