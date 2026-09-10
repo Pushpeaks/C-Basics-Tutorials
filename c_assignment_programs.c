@@ -146,25 +146,30 @@
 
 
 
+
 /*
 7) Write a program to check student's grade based on marks
 */
-#include<stdio.h>
-int main(){
-    int marks;
-    printf("Enter your total marks : ");
-    scanf("%d",&marks);  
-    if(marks<=100 && marks>80){
-        printf("\nFirst Division");
-    }else if(marks<=80 && marks>75){
-        printf("Second Division");
-    }else if(marks<=75 && marks>60){
-        printf("Third Division");
-    }else{
-        printf("Fail");
-    }
-    return 0;
-}
+// #include<stdio.h>
+// int main(){
+//     int marks;
+//     printf("Enter your total marks : ");
+//     scanf("%d",&marks);  
+//     if(marks>0){
+//         if(marks<=100 && marks>80){
+//             printf("\nFirst Division");
+//         }else if(marks<=80 && marks>75){
+//             printf("Second Division");
+//         }else if(marks<=75 && marks>60){
+//             printf("Third Division");
+//         }else{
+//             printf("Fail");
+//         }
+//     }else{                  
+//         printf("Enter valid marks!!");
+//     }
+//     return 0;
+// }
 
 /*
 8) Write a program using switch case to implement a basic calculator
@@ -209,12 +214,12 @@ int main(){
 // }
 
 /*
-9) Write a program to implement a basic calculator using switch case only
+9) Write a program to implement a basic atm using switch case only
 */
 // #include <stdio.h>
 // int main() {
 //     int choice, pin = 1234, enteredPin, newPin;
-//     float balance = 5000.0, amount;
+//     float balance = 0.0, amount;
 //     printf("Welcome to ATM\n");
 //     printf("Enter your PIN: ");
 //     scanf("%d", &enteredPin);
@@ -286,13 +291,14 @@ int main(){
 // }
 
 //Write a program to print all even from 1-100
-// #include<stdio.h>
+#include<stdio.h>
 
-// int main(){
-//     int i;
-//     for(i=1;i<=100;i++){
-//         if(i%2==0){
-//             printf("%d ",i);
-//         }
-//     }
-// }
+int main(){
+    int i;
+    for(i=1;i<=100;i++){
+        if(i%2==0){
+            printf("%d ",i);
+        }
+    }
+}
+
