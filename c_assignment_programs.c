@@ -149,22 +149,22 @@
 /*
 7) Write a program to check student's grade based on marks
 */
-// #include<stdio.h>
-// int main(){
-//     int marks;
-//     printf("Enter your total marks : ");
-//     scanf("%d",&marks);
-//     if(marks<=100 && marks>80){
-//         printf("\nFirst Division");
-//     }else if(marks<=80 && marks>75){
-//         printf("Second Division");
-//     }else if(marks<=75 && marks>60){
-//         printf("Third Division");
-//     }else{
-//         printf("Fail");
-//     }
-//     return 0;
-// }
+#include<stdio.h>
+int main(){
+    int marks;
+    printf("Enter your total marks : ");
+    scanf("%d",&marks);  
+    if(marks<=100 && marks>80){
+        printf("\nFirst Division");
+    }else if(marks<=80 && marks>75){
+        printf("Second Division");
+    }else if(marks<=75 && marks>60){
+        printf("Third Division");
+    }else{
+        printf("Fail");
+    }
+    return 0;
+}
 
 /*
 8) Write a program using switch case to implement a basic calculator
@@ -286,13 +286,13 @@
 // }
 
 //Write a program to print all even from 1-100
-#include<stdio.h>
+// #include<stdio.h>
 
-int main(){
-    int i;
-    for(i=1;i<=100;i++){
-        if(i%2==0){
-            printf("%d ",i);
-        }
-    }
-}
+// int main(){
+//     int i;
+//     for(i=1;i<=100;i++){
+//         if(i%2==0){
+//             printf("%d ",i);
+//         }
+//     }
+// }
